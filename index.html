@@ -56,11 +56,13 @@
             margin-bottom: 16px;
         }
 
+        /* 修正大頭照對齊與尺寸，完整顯示頭部與全身 */
         .avatar { 
-            width: 110px; 
-            height: 110px; 
+            width: 120px; 
+            height: 120px; 
             border-radius: 50%; 
             object-fit: cover; 
+            object-position: top center; /* 關鍵：優先對齊頭部 */
             border: 3.5px solid #d97706; 
             box-shadow: 0 6px 16px rgba(217, 119, 6, 0.25);
             background: #f1f5f9;
